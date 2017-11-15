@@ -1,15 +1,10 @@
-import {createStore} from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import { createEpicMiddleware } from 'redux-observable';
 
-const reducer = (state = {}, action) => {
-  if(action.type === 'HELLO') {
-    return Object.assign({}, state, { hello: true });
-  }
-  if(action.type === 'BYE') {
-    return Object.assign({}, state, { hello: false });
-  }
-  return state;
-};
+import epic from './epic';
+import reducer from './reducer';
 
 export default function() {
-  return createStore(reducer);
-};
+  const epicMiddleware = createEpicMiddleware(epic);
+  return createStore(reducer, applyMiddleware(epicMiddleware));
+}

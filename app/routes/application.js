@@ -9,6 +9,5 @@ export default Ember.Route.extend({
       console.log(store.getState());
     });
     store.dispatch({ type: 'HELLO' });
-    store.dispatch({ type: 'BYE' });
   }
 });
