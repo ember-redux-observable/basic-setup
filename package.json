@@ -34,10 +34,21 @@
     "ember-data": "^2.11.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.6.0",
+    "ember-lodash-shim": "2.0.5",
+    "ember-redux": "3.0.0",
+    "ember-redux-observable-shim": "1.1.0",
+    "ember-redux-shim": "2.5.0",
+    "ember-redux-thunk-shim": "2.4.0",
     "ember-resolver": "^2.0.3",
+    "ember-rxjs-shim": "1.1.0",
     "ember-source": "~2.11.0",
+    "ember-symbol-observable": "1.0.0",
     "ember-welcome-page": "^2.0.2",
-    "loader.js": "^4.0.10"
+    "loader.js": "^4.0.10",
+    "redux": "^3.7.2",
+    "redux-observable": "^0.16.0",
+    "redux-thunk": "^2.2.0",
+    "rxjs": "^5.4.3"
   },
   "engines": {
     "node": ">= 0.12.0"
